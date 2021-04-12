@@ -14,7 +14,7 @@ table.dataframe, .dataframe td {
   font-size: 0.9em;
 }
 
-table.dataframe th {
+.dataframe th {
   border: none;
   border-bottom: 0.5px solid #C8C8C8;
   border-collapse: collapse;
@@ -25,7 +25,7 @@ table.dataframe th {
   text-transform: uppercase;
 }
 
-input[type=text], select {
+input[type=text] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
