@@ -1,7 +1,7 @@
 #  Application Usage
 
 Link to deployed Recommendation Engine
-<b>https://capstone-darsh.herokuapp.com/<b>
+<b>https://capstone-darsh.herokuapp.com/</b>
 
 ## Steps
 * Open the above link.
