@@ -22,8 +22,8 @@ product_info = product_info.set_index('id')
 
 
 
-@app.route('/', methods=['GET', 'POST'])
-def home_page():
+@app.route('/')
+def index():
         # home page to render the form
     return  render_template('index.html')
 
