@@ -1,0 +1,14 @@
+<!doctype html>
+<title>Recommendation Engine</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<h1>Recommendation Engine</h1>
+<hr>
+<div class=page>
+  <form action = "https://capstone-darsh.herokuapp.com/recommendations" method = "POST">
+    <div class="form-group">
+		<label>Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter a username">
+    </div>
+    <input type="submit" value="Submit">
+  </form>
+</div>
