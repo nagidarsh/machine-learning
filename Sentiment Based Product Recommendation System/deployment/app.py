@@ -19,11 +19,24 @@ product_info = pd.read_csv('dataset/sample30.csv', usecols = ['id', 'name', 'bra
 product_info.drop_duplicates(subset='id', keep='first', inplace=True)
 product_info = product_info.set_index('id')
 
-# http:baseurl/recommendations/{username}
 
-@app.route('/recommendations/<username>', methods=['GET'])
-def age_pred(username):
+
+
+@app.route('/')
+@app.route('/index')
+def index():
+        # home page to render the form
+    return  render_template('index.html')
+
+
+
+
+# http:baseurl/recommendations
+
+@app.route('/recommendations', methods=['GET', 'POST'])
+def recommend():
     # call the model for prediction
+    username = request.form['username']
     prediction = predict(username)
     df_pred = pd.DataFrame(prediction, columns=['id'])
 

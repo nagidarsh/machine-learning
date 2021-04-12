@@ -39,7 +39,7 @@ def predict(username, ntop = 5):
     if np.isnan([value]):
       # predict rating and append to list
       product_ids = product_ids.append({'id': index, 'rating': 
-                          recommender_model.predict(username, index)}, ignore_index = True)
+                          recommender_model.predict(username, index).est}, ignore_index = True)
   
   return _predict_sentiment(product_ids.sort_values(by='rating', ascending=False).head(max(20, ntop)), ntop)
 
