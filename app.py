@@ -22,7 +22,7 @@ product_info = product_info.set_index('id')
 
 
 
-@app.route('/')
+@app.route('/index')
 def index():
         # home page to render the form
     return  render_template('index.html')
